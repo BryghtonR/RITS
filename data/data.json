@@ -1,0 +1,29 @@
+[
+  "Appetizers":[
+    "Calamari",
+    "Blooming Onion",
+    "Nachos",
+    "Salad",
+    "Soup"
+  ],
+  "Entrees":[
+    "Steak",
+    "Burger",
+    "Chicken"
+  ],
+  "Sides":[
+    "French Fries",
+    "Potato Chips",
+    "Coleslaw",
+    "Apple Sauce",
+    "Side Salad"
+  ],
+  "Drinks":[
+    "Coke",
+    "Dr. Pepper",
+    "Mt Dew",
+    "Bottled Water",
+    "Coffee",
+    "Tea"
+  ]
+]
