@@ -1,3 +1,13 @@
 body {
+  padding: 0px 100px 0px 100px;
+}
+.sectionButton {
   color: blue;
+}
+.itemButton {
+  color: red;
+}
+#receiptBar {
+  float: right;
+  clear: none;
 }

@@ -1,0 +1,20 @@
+var menu = [{
+  "sectionName":"food",
+  "items":[{
+    "itemName":"Burger",
+    "itemPrice":6.00
+    },{
+    "itemName":"Steak",
+    "itemPrice": 10.00
+    }]
+  },{
+  "sectionName":"drink",
+  "items":[{
+    "itemName": "Coke",
+    "itemPrice": 2.00
+    },{
+    "itemName": "Beer",
+    "itemPrice": 3.00
+    }
+  ]}
+];
