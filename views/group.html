@@ -14,3 +14,9 @@
 <div ng-repeat="group in data.menu">
   <div><a href="#/path/{{$index}}">{{group.groupName}}</a></div>
 </div>
+
+<p>________</p>
+
+<div ng-repeat="item in data.menu[groupId].items">
+  <div><a href="#/path/{{groupId}}/{{$index}}">{{item.itemName}}</a></div>
+</div>

@@ -1,7 +1,4 @@
 <div id="receiptBar">
-  <button>Delete</button>
-  <button>Copy</button>
-  <button>Edit</button>
   <h4>Receipt</h4>
   <div ng-repeat="purchase in data.purchases">
     <button ng-click="toggle = !toggle" ng-class="{'red' : toggle}">{{purchase.itemName}}</button>
@@ -10,7 +7,13 @@
   <h4>Total: {{" $" + data.total}}</h4>
   <button><a href="#/checkOut">Check Out</a></button>
 </div>
-
-<div ng-repeat="group in data.menu">
-  <div><a href="#/path/{{$index}}">{{group.groupName}}</a></div>
+<div class="paymentBar">
+  <input type="number" ng-model="data.payment"></br>
+  <button>Cash</button>
+  <button>Credit</button>
+  <button>Check</button>
+  <p>Payment:{{data.payment}}</p>
+  <p>Cost:{{data.total}}</p>
+  <p>Ballance:{{data.total - data.payment}}</p>
+  <button>Complete Payment</button>
 </div>

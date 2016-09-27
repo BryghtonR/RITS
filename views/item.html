@@ -1,2 +1,28 @@
-<h3>{{Menu[sectionNum].items[itemNum].name}}</h3>
-<p>Price: {{Menu[sectionNum].items[itemNum].price}}</p>
+<div id="receiptBar">
+  <button>Delete</button>
+  <button>Copy</button>
+  <button>Edit</button>
+  <h4>Receipt</h4>
+  <div ng-repeat="purchase in data.purchases">
+    <button ng-click="toggle = !toggle" ng-class="{'red' : toggle}">{{purchase.itemName}}</button>
+    <span>{{" $"  + purchase.itemPrice}}</span>
+  </div>
+  <h4>Total: {{" $" + data.total}}</h4>
+  <button><a href="#/checkOut">Check Out</a></button>
+</div>
+
+<div ng-repeat="group in data.menu">
+  <div><a href="#/path/{{$index}}">{{group.groupName}}</a></div>
+</div>
+
+<p>________</p>
+
+<div ng-repeat="item in data.menu[groupId].items">
+  <div><a href="#/path/{{groupId}}/{{$index}}">{{item.itemName}}</a></div>
+</div>
+
+<p>________</p>
+{{data.menu[groupId].items[itemId].itemName}}
+{{data.menu[groupId].items[itemId].itemInfo}}
+{{" $" + data.menu[groupId].items[itemId].itemPrice}}
+<button ng-click="addValue()">addValue</button>

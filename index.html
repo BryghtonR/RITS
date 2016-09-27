@@ -2,33 +2,26 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+  <script src="ui-bootstrap-tpls-2.1.4.min.js"></script>
 </head>
+
 <body>
-  <h1>Restaurant XYZ</h1>
+<div ng-app="myApp" ng-controller="FirstCtrl">
+  <button><a href="#/home">Menu</a></button><button>Admin</button>
+  <h2>Restaurant XYZ</h2>
+  <ng-view></ng-view>
 
-  <div id="receiptBar">
-    <h4>Receipt:</h4>
-    <button id="delete">Delete</button>
-    <button id="edit">Edit</button>
-    <button id="copy">Copy</button>
-    <div id="receipt">
-    </div><br>
-    <div id="total"></div>
-    <button>Check Out</button>
-  </div>
+  <!-- Scripts -->
+  <script src="main.js"></script>
 
-  <div id="mainMenu">
-    <h4>Main Menu:</h4>
-  </div><br>
-  <div id="sectionMenu"></div><br>
-
-  <h4>Item Info:</h4>
-  <div id="addButton"></div>
-  <div id="itemInfo"> </div>
-
-  <script src="data/menu.json"></script>
-  <script src="js/calc.js"></script>
 </body>
 </html>
