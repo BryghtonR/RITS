@@ -5,15 +5,37 @@
     <span>{{" $"  + purchase.itemPrice}}</span>
   </div>
   <h4>Total: {{" $" + data.total}}</h4>
-  <button><a href="#/checkOut">Check Out</a></button>
 </div>
 <div class="paymentBar">
-  <input type="number" ng-model="data.payment"></br>
+
+  <div>
+    <div>
+      <button ng-click="addX(7)">7</button>
+      <button ng-click="addX(8)">8</button>
+      <button ng-click="addX(9)">9</button>
+    </div>
+    <div>
+      <button ng-click="addX(4)">4</button>
+      <button ng-click="addX(5)">5</button>
+      <button ng-click="addX(6)">6</button>
+    </div>
+    <div>
+      <button ng-click="addX(1)">1</button>
+      <button ng-click="addX(2)">2</button>
+      <button ng-click="addX(3)">3</button>
+    </div>
+    <div>
+      <button ng-click="addX(0)">0</button>
+      <button ng-click="addX(0, 0)">00</button>
+      <button ng-click="removeNum()"><-</button>
+    </div>
+  </div>
+
   <button>Cash</button>
   <button>Credit</button>
   <button>Check</button>
-  <p>Payment:{{data.payment}}</p>
+  <p>Payment:{{paymentNum}}</p>
   <p>Cost:{{data.total}}</p>
-  <p>Ballance:{{data.total - data.payment}}</p>
+  <p>Ballance:{{data.total - paymentNum}}</p>
   <button>Complete Payment</button>
 </div>
